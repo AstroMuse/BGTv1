@@ -1,0 +1,90 @@
+# === 自定义目录 ===
+database/
+log/
+
+# === Python 编译输出 ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === 虚拟环境 ===
+venv/
+env/
+.venv/
+.env/
+
+# === Jupyter Notebook Checkpoints ===
+.ipynb_checkpoints/
+
+# === 配置文件/临时文件 ===
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+
+# === 本地环境变量文件（如 dotenv）===
+.env
+*.env
+
+# === VSCode/IDE 配置 ===
+.vscode/
+.idea/
+
+# === pip 缓存 / wheel 文件 ===
+*.whl
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# === SQLite 等本地数据库文件 ===
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.sql
+
+# === pytest 缓存 ===
+.pytest_cache/
+
+# === mypy 类型检查缓存 ===
+.mypy_cache/
+
+# === coverage 覆盖率文件 ===
+.coverage
+htmlcov/
+
+# === IPython 历史 ===
+~/.ipython/
+
+# === 大文件 / 数据 / 产出（开源仓绝不提交）===
+# 注意：.gitignore 不支持行尾内联注释，注释必须独占一行
+# S2 citation 分片 (~140GB)
+dl/
+# 跑分产出 (~35GB)
+gen_result/
+# 运行日志
+logs/
+# 引用图谱 LMDB
+*.lmdb
+arxiv.zip
+dataset/
+# BGE 模型权重 / 适配器 / 训练数据（保留 bge/*.py 代码）
+bge/bge-reranker-v2-m3/
+bge/output/
+bge/data/
+
+# === 内部/溯源文档（不进开源仓，留在本地）===
+CLAUDE.md
+README_ZH.md
+docs/HUAWEI_CUP_SPAR_ZH.md
+docs/HUAWEI_CUP_SPAR_EN.md
+docs/HUAWEI_CUP_SPAR_TECH_SUPPLEMENT_ZH.md
+docs/HUAWEI_CUP_SPAR_TECH_SUPPLEMENT_EN.md
+figs/SPAR.md
+
+# 显式保留密钥模板（.env 已忽略，但 .env.example 要提交）
+!.env.example

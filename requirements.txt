@@ -1,0 +1,33 @@
+# Pinned to the versions installed in the SPAR conda env (Python 3.10).
+# NOTE: torch / faiss-cpu wheels are platform/CUDA-specific — on a different
+# machine install those per their official instructions, the rest are portable.
+# (sqlite3 and dataclasses are removed: both are part of the Python 3.10 stdlib;
+#  the PyPI `dataclasses` backport actively breaks 3.7+.)
+
+# --- core pipeline ---
+arxiv==4.0.0
+requests==2.33.1
+numpy==2.2.6
+pandas==2.3.3
+tqdm==4.67.3
+openai==1.90.0
+func_timeout==4.3.5
+cachetools==7.1.4
+graphviz==0.21
+biopython==1.87
+lmdb==2.2.1          # local arXiv citation graph (citation_store.py / --ref-api local)
+python-dotenv==1.0.1 # load API keys from a local .env (global_config.py)
+
+# --- web UI (demo_app_with_front.py) ---
+fastapi==0.136.3
+uvicorn==0.48.0
+pydantic==2.13.4
+
+# --- BGE rerank / prefilter + SPECTER2 index + LoRA training (bge/) ---
+torch==2.7.0
+transformers==4.57.6
+peft==0.19.1
+accelerate==1.13.0
+sentencepiece==0.2.1
+datasets==5.0.0
+faiss-cpu==1.14.2

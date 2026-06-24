@@ -54,7 +54,6 @@ key; model definitions live in `MODEL_CONFIGS` in [`local_request_v2.py`](local_
 python3 demo_app_with_front.py
 ```
 
-![demo](./figs/search_demo.jpg)
 
 **Batch benchmark run:**
 

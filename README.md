@@ -6,7 +6,6 @@ multiple scholarly sources (arXiv, OpenAlex, PubMed, Semantic Scholar, and Googl
 Scholar via Serper), LLM-scores every candidate for relevance, optionally follows
 citation references, and returns ranked papers.
 
-![overview](./figs/overview.png)
 
 ---
 
